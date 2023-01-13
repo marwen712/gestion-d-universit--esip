@@ -1,0 +1,32 @@
+<div class="col-md-4 mt-5">
+    <div class="card border-0 shadow p-3">
+        <div class="form-floating mb-3 text-center">
+            <h5 class="text-center text-warning">Ajouter un etudiant</h5>
+        </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="first_name">
+        <label for="firstName">Prénom : </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="lasttName" name="lasttName"[(ngModel)]="last_name">
+        <label for="lastName">Nom : </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="class" name="class" [(ngModel)]="classe">
+        <label for="class">Classe : </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+        <label for="email">Email : </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="phone" name="phone"[(ngModel)]="mobile">
+        <label for="phone">Télephone : </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="address" name="address"[(ngModel)]="address">
+        <label for="address">Adresse : </label>
+      </div>
+      <button class="btn btn-outline-success" (click)="addEtudiant()">Ajouter etudiant</button>
+</div>
+</div>

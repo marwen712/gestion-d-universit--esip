@@ -1,0 +1,23 @@
+/* .nav-link {
+    color:aliceblue
+};
+p {
+    margin-top: 2px;
+    margin-bottom: 0rem;
+    margin-left: 42rem;
+    font-style: italic;
+    color: aliceblue;
+}; */
+p {
+    margin-top: 2px;
+    margin-bottom: 0rem;
+    margin-left: 42rem;
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+
+};
+a.nav-link{
+    font-style: italic,bold;
+    color: blue;
+}

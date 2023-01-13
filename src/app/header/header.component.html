@@ -1,0 +1,81 @@
+<!-- <div *ngIf="!isAuth">
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-primary" data-bs-theme="dark" >
+    <p class="text-center" >Bienvenue</p>
+      <div class="container-fluid">
+  
+        <div class="collapse navbar-collapse" id="navbarText">
+   
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="home" *ngIf="isAuth">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="emploi" *ngIf="isAuth">Emplois</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="etudiant" *ngIf="isAuth">Etudiant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="enseignant" *ngIf="isAuth">Enseignant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="materiel" *ngIf="isAuth">Materiel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="signup" *ngIf="isAuth">utilisateur</a>
+            </li>
+            
+          </ul>
+          
+              <a class="nav-link" routerLink="auth/signin" *ngIf="!isAuth">Connexion</a>
+              
+              <a class="nav-link"(click)="onSignOut()" *ngIf="isAuth" style="cursor:pointer;">Déconnexion</a>
+        </div>
+      </div>
+    </nav>
+</div> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary"style="background-color: #e3f2fd;">
+  <p class="text-center" *ngIf="!isAuth">Bienvenue</p>
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbarText">
+ 
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" *ngIf="isAuth">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="emploi" *ngIf="isAuth">Emplois</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="etudiant" *ngIf="isAuth">Etudiant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="enseignant" *ngIf="isAuth">Enseignant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="materiel" *ngIf="isAuth">Materiel</a>
+          </li>
+         
+         
+          <li class="nav-item dropdown" *ngIf="isAuth">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ajouter
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="addEtudiant">Etudiant</a></li>
+              <li><a class="dropdown-item" routerLink="signup">Utilisateur</a></li>
+              <li><a class="dropdown-item" routerLink="add-enseignant">Enseignant</a></li>
+              <li><a class="dropdown-item" routerLink="add-materiel">Materiel</a></li>
+              </ul>
+          </li>
+          
+        </ul>
+        
+            <!-- <a class="nav-link" routerLink="auth/signin" *ngIf="!isAuth">Connexion</a> -->
+            
+            <a class="nav-link"(click)="onSignOut()" *ngIf="isAuth" style="cursor:pointer;">Déconnexion</a>
+      </div>
+    </div>
+  </nav>
+ 
